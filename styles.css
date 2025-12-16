@@ -116,6 +116,25 @@ header{
   gap: 26px;
   align-items: stretch;
 }
+/* Make the right hero column a vertical flex stack */
+.hero-grid > div:last-child{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 16px;
+}
+
+/* Let the slider expand to fill the extra height so there is no blank area */
+.hero-grid > div:last-child .slider{
+  flex: 1;
+  min-height: 520px; /* adjust 480–650 depending on your taste */
+}
+
+/* Optional: reduce extra padding above HFCC inside hero */
+.hero-grid > div:last-child .section{
+  padding-top: 0;
+}
+
 .kicker{
   display:inline-flex; gap:10px; align-items:center;
   padding: 8px 12px;

@@ -110,6 +110,23 @@ header{
 .hero{
   padding: 54px 0 28px;
 }
+/* v2 hero: keep slider visually “hero-sized” */
+.hero-grid-v2 .hero-slider{
+  height: 420px;            /* desktop hero height */
+}
+
+.chip-row{
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Better balance for the section below hero */
+.trust-grid{
+  align-items: stretch;
+}
+
 .hero-grid{
   display:grid;
   grid-template-columns: 1.1fr .9fr;
@@ -350,6 +367,10 @@ h1{
 .whatsapp span{font-weight: 900}
 
 @media (max-width: 980px){
+    .hero-grid-v2 .hero-slider{
+    height: 280px;          /* mobile hero height */
+  }
+
   .hero-grid{grid-template-columns: 1fr; }
   .grid-3{grid-template-columns: 1fr}
   .grid-2{grid-template-columns: 1fr}

@@ -315,19 +315,30 @@ h1{
   display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between;
 }
 
-.whatsapp{
+.whatsapp-float{
   position: fixed;
-  right: 16px;
-  bottom: 16px;
-  z-index: 999;
-  width: 54px; height: 54px;
-  border-radius: 18px;
-  display:grid; place-items:center;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
   background: #25D366;
-  color:#fff;
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
 }
+
+/* FORCE the icon size (prevents the “very big” issue) */
+.whatsapp-float .whatsapp-icon{
+  width: 28px !important;
+  height: 28px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+  display: block;
+}
+
 .whatsapp:hover{transform: translateY(-1px)}
 .whatsapp span{font-weight: 900}
 
@@ -353,4 +364,34 @@ h1{
     gap:6px;
   }
   .nav.open .nav-links a{padding:12px}
+  .social-icons{
+  display:flex;
+  gap:14px;
+  margin-top:15px;
+}
+
+.social-icons a{
+  width:38px;
+  height:38px;
+  background:#3b2a1a;   /* coffee brown */
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  text-decoration:none;
+  font-size:16px;
+  transition:0.3s ease;
+}
+
+.social-icons a:hover{
+  background:#2e7d32;   /* green */
+  transform:translateY(-3px);
+}
+.social-icons a{
+  width:45px;
+  height:45px;
+  font-size:18px;
+}
+
 }

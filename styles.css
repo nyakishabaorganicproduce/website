@@ -17,6 +17,12 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
+html, body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
 body{
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
   color: #1a1412;
@@ -365,6 +371,7 @@ h1{
   }
   .nav.open .nav-links a{padding:12px}
   .social-icons{
+    flex-wrap: wrap;
   display:flex;
   gap:14px;
   margin-top:15px;
@@ -392,6 +399,35 @@ h1{
   width:45px;
   height:45px;
   font-size:18px;
+}
+  .nav{
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .brand{
+    min-width: 0;              /* overrides min-width:220px */
+    flex: 1 1 auto;
+  }
+
+  .nav-cta{
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
+  .nav-cta .btn{
+    padding: 10px 12px;
+    font-size: 13px;
+    max-width: 100%;
+    white-space: normal;       /* allows “Talk to Export Team” to wrap */
+  }
+@media (max-width: 520px){
+  .footer-grid{ grid-template-columns: 1fr; }
+  .nav-cta .btn{ width: 100%; }   /* stack the 2 buttons nicely */
+  .brand-mark{ width:64px; height:64px; }
 }
 
 }

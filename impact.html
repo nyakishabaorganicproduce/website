@@ -192,5 +192,23 @@
 </footer>
 
 <script src="script.js" defer></script>
+<script>
+  // Right-click off
+  document.addEventListener("contextmenu", e => e.preventDefault());
+
+  // Block common shortcuts (not foolproof)
+  document.addEventListener("keydown", e => {
+    const k = (e.key || "").toLowerCase();
+    const ctrl = e.ctrlKey || e.metaKey;
+
+    // Ctrl/Cmd+C, S, U, P, A
+    if (ctrl && ["c","s","u","p","a"].includes(k)) e.preventDefault();
+
+    // F12 (devtools) and Ctrl+Shift+I/J
+    if (e.key === "F12") e.preventDefault();
+    if (ctrl && e.shiftKey && ["i","j","c"].includes(k)) e.preventDefault();
+  });
+</script>
+
 </body>
 </html>

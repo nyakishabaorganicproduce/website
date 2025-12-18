@@ -451,5 +451,23 @@ h1{
   .nav-cta .btn{ width: 100%; }   /* stack the 2 buttons nicely */
   .brand-mark{ width:64px; height:64px; }
 }
+/* Footer: center + stack nicely on mobile */
+@media (max-width: 520px){
+  .footer{ text-align: center; }
+
+  .footer-grid{
+    grid-template-columns: 1fr;   /* you already do this, keep it */
+    justify-items: center;        /* centers each grid column content */
+  }
+
+  .footer a{ display: inline-block; }
+
+  .copy{
+    flex-direction: column;       /* stack copyright rows */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
 
 }

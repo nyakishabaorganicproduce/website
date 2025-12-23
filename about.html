@@ -250,14 +250,76 @@
 
 <footer class="footer">
   <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="min-width:auto">
+          <div class="brand-mark" aria-hidden="true"><img src="assets/web-log.png" alt="" onerror="this.style.display='none'"></div>
+          <div class="brand-name">
+            <strong>Nyakishaba Organic Produce Ltd.</strong>
+            <span class="small">Ugandan Robusta Coffee Export</span>
+          </div>
+        </div>
+        <p class="muted small" style="margin-top:10px">
+          <b> Premium Ugandan coffee for global markets built on quality control, compliance and long-term partnerships.</b>
+        </p>
+        <p class="small muted"><strong>Registration No:</strong> <span>[Add Registration Number]</span></p>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <div class="small" style="display:grid; gap:8px">
+          <a href="about.html"> <b>About Us </b></a>
+          <a href="products.html"> <b>Products </b></a>
+          <a href="export-process.html"> <b>Export Process </b></a>
+          <a href="contact.html"> <b>Contact Us </b></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <div class="small" style="display:grid; gap:8px">
+          <a href="partner.html"> <b>Partner With Us</b> </a>
+          <a href="impact.html"> <b>Impact</b></a>
+          <a href="contact.html#quote"> <b>Request Quote </b></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Social</h4>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nyakishaba-organic-produce-703025395/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> <b>LinkedIn</b> <br>
+            <a href="https://x.com/nyakishaba" aria-label="X"><i class="fab fa-x-twitter"></i></a> <b>X</b><br> 
+             
+        </div>
+
+      </div>
+    </div>
+
     <div class="copy">
-      <span><strong>© 2025 Nyakishaba Organic Produce Limited</strong></span>
-      <span class="small">
-        Registration No: <strong>80020002867415</strong>
-      </span>
+      <span><b>© 2025 Nyakishaba Organic Produce Ltd. All rights reserved.</b></span>
+      <span class="small"><b>Built for export credibility • Coffee • Compliance • Logistics </b></span>
     </div>
   </div>
-</footer>
+</footer>\
+
+  <script src="script.js" defer></script>
+  <script>
+  // Right-click off
+  document.addEventListener("contextmenu", e => e.preventDefault());
+
+  // Block common shortcuts (not foolproof)
+  document.addEventListener("keydown", e => {
+    const k = (e.key || "").toLowerCase();
+    const ctrl = e.ctrlKey || e.metaKey;
+
+    // Ctrl/Cmd+C, S, U, P, A
+    if (ctrl && ["c","s","u","p","a"].includes(k)) e.preventDefault();
+
+    // F12 (devtools) and Ctrl+Shift+I/J
+    if (e.key === "F12") e.preventDefault();
+    if (ctrl && e.shiftKey && ["i","j","c"].includes(k)) e.preventDefault();
+  });
+</script>
 
 </body>
 </html>

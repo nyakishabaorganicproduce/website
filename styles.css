@@ -469,5 +469,13 @@ h1{
     text-align: center;
   }
 }
+/* Compact CTA section */
+.banner.cta-compact{
+  min-height: auto;
+}
+
+.banner.cta-compact .content{
+  padding: 24px 18px;
+}
 
 }

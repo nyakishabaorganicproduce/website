@@ -3,54 +3,51 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Us | Nyakishaba Organic Produce Ltd.</title>
-  <meta name="description" content="Learn about our 360-acre coffee farm, value-addition factory development, and wealth creation impact across farmers." />
-  <meta name="theme-color" content="#2a1713" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+  <title>About Us | Nyakishaba Organic Produce Limited</title>
+  <meta name="description" content="Nyakishaba Organic Produce Limited is a Ugandan coffee production and export company built on farm strength, value addition, and long-term farmer partnerships." />
+
+  <meta name="theme-color" content="#2a1713" />
   <link rel="stylesheet" href="styles.css" />
+
   <!-- Open Graph -->
-  <meta property="og:title" content="About Us | Nyakishaba Organic Produce Ltd." />
-  <meta property="og:description" content="Learn about our 360-acre coffee farm, value-addition factory development, and wealth creation impact across farmers." />
+  <meta property="og:title" content="About Us | Nyakishaba Organic Produce Limited" />
+  <meta property="og:description" content="Ugandan coffee production, value addition, and export company serving global markets." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/og-placeholder.jpg" />
-  <!-- (Optional) Google Analytics: replace G-XXXXXXXXXX -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+
+  <!-- Schema -->
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Organization", "name": "Nyakishaba Organic Produce Ltd.", "url": "https://example.com", "logo": "assets/web-log.png", "sameAs": ["https://www.facebook.com/", "https://www.linkedin.com/", "https://www.instagram.com/"], "description": "Ugandan coffee export company supplying premium robusta and value-added coffee products to global markets.", "address": {"@type": "PostalAddress", "addressCountry": "UG"}}
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Nyakishaba Organic Produce Limited",
+    "address":{"@type":"PostalAddress","addressCountry":"UG"},
+    "description":"Ugandan coffee production and export company focused on value addition, quality control, and farmer-linked supply chains."
+  }
   </script>
 </head>
+
 <body>
-<a class="skip" href="#main">Skip to content</a>
 
 <header>
   <div class="container">
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav">
       <a class="brand" href="index.html">
-        <div class="brand-mark" aria-hidden="true">
-          <!-- Replace with your real logo file: assets/web-log.png -->
-          <img src="assets/web-log.png" alt="" onerror="this.style.display='none'">
+        <div class="brand-mark">
+          <img src="assets/web-log.png" alt="Nyakishaba Organic Produce Logo">
         </div>
         <div class="brand-name">
           <strong>Nyakishaba Organic Produce Ltd.</strong>
-          <span>Robusta Coffee • Export • Value Addition</span>
+          <span>Ugandan Coffee • Export • Value Addition</span>
         </div>
       </a>
 
-      <button class="icon-btn" id="menuBtn" aria-label="Open menu">☰</button>
-
-      <div class="nav-links" role="navigation">
+      <div class="nav-links">
         <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
+        <a href="about.html" class="active">About Us</a>
         <a href="products.html">Products</a>
         <a href="export-process.html">Export Process</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Contact</a>
       </div>
 
       <div class="nav-cta">
@@ -61,134 +58,189 @@
   </div>
 </header>
 
-<main id="main">
+<main>
 
+<!-- HERO -->
 <section class="section">
   <div class="container">
     <div class="banner">
       <div class="bg" style="background-image:url('assets/abt.jpg')"></div>
       <div class="shade"></div>
       <div class="content">
-        <h1>About Nyakishaba Organic Produce Ltd.</h1>
-        <p>Built for export credibility: farm strength, factory capacity, and nationwide farmer reach.</p>
+        <h1>About Nyakishaba Organic Produce Limited</h1>
+        <p>
+          A Ugandan coffee production and export company built on farm strength,
+          value addition, and long-term partnerships.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- WHO WE ARE -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2">
+
+      <!-- TEXT SIDE -->
+      <div class="card card-pad">
+        <h2 style="margin-top:0">Who We Are</h2>
+        <p class="muted">
+          Nyakishaba Organic Produce Limited is a Ugandan-registered agricultural
+          and export company focused on the production, aggregation, value addition,
+          and export of premium Ugandan coffee. Our operations are built around
+          structured farm control, developing processing capacity, and strong
+          farmer partnerships that support consistent export supply.
+        </p>
+
+        <div class="badges">
+          <span class="badge">Registered in Uganda</span>
+          <span class="badge">Export-oriented</span>
+          <span class="badge">Farmer-linked supply</span>
+          <span class="badge">Value addition focus</span>
+        </div>
+      </div>
+
+      <!-- IMAGE SIDE -->
+      <div class="card" style="overflow:hidden">
+        <img
+          src="assets/who.jpg"
+          alt="Nyakishaba Organic Produce coffee operations"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FARM BASE -->
 <section class="section">
   <div class="container">
     <div class="grid-2">
       <div class="card card-pad">
         <h2 style="margin-top:0">360-Acre Farm Base</h2>
         <p class="muted">
-          Our farm sits on approximately <strong>360 acres</strong>, forming a strong production anchor for consistent supply.
-          We use this base to demonstrate standards, improve seedlings, and support farmer adoption of better practices.
+          Our operations are anchored on approximately <strong>360 acres of farmland</strong>,
+          which serves as both a production base and a demonstration center for quality standards,
+          traceability, and improved farming practices. This farm base supports consistent supply
+          and provides a model that guides farmer engagement across our wider network.
         </p>
+
         <div class="grid-2">
           <div class="feature">
-            <div class="thumb"><img src="assets/trace.jpg" alt="Coffee farm placeholder"></div>
+            <div class="thumb"><img src="assets/trace.jpg" alt=""></div>
             <div>
-              <h3>Traceable Sourcing</h3>
-              <p>Farm-to-export control that supports buyer confidence and consistency.</p>
+              <h3>Traceable Production</h3>
+              <p>Clear sourcing control from farm level through aggregation.</p>
             </div>
           </div>
           <div class="feature">
-            <div class="thumb"><img src="assets/seedling.jpg" alt="Seedlings placeholder"></div>
+            <div class="thumb"><img src="assets/seedling.jpg" alt=""></div>
             <div>
-              <h3>Seedling Support</h3>
-              <p>Improved seedlings and guidance to increase farmer yield and quality.</p>
+              <h3>Farmer Support</h3>
+              <p>Improved seedlings, guidance, and post-harvest standards.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="card" style="overflow:hidden">
-        <img src="assets/farm base.jpg" alt="Farmer training and community placeholder">
+      <div class="card">
+        <img src="assets/360.jpg" alt="Coffee farm operations">
       </div>
     </div>
   </div>
 </section>
 
+<!-- VALUE ADDITION -->
 <section class="section">
   <div class="container">
     <div class="grid-2">
-      <div class="card" style="overflow:hidden">
-        <img src="assets/factory.jpg" alt="Factory and machinery placeholder">
+      <div class="card">
+        <img src="assets/factory.jpg" alt="Coffee processing facility">
       </div>
 
       <div class="card card-pad">
-        <h2 style="margin-top:0">Factory Development & Value Addition</h2>
+        <h2 style="margin-top:0">Value Addition & Processing</h2>
         <p class="muted">
-          We are developing a factory to strengthen processing, grading, sorting, and packaging — ensuring consistent export specifications.
-          This value addition improves farmer incomes and helps buyers receive stable quality over long-term supply contracts.
+          Nyakishaba Organic Produce Limited is developing processing capacity to
+          strengthen grading, moisture control, sorting, and packaging. This approach
+          allows us to meet export specifications consistently while increasing value
+          retained within the supply chain.
         </p>
+
         <div class="badges">
-          <span class="badge">Processing & grading</span>
+          <span class="badge">Grading & sorting</span>
           <span class="badge">Moisture control</span>
           <span class="badge">Packaging readiness</span>
-          <span class="badge">Export documentation support</span>
+          <span class="badge">Export compliance</span>
         </div>
+
         <p class="muted small" style="margin-top:12px">
-          <strong>Machinery sourcing support:</strong> HFCC Limited (China) supports our equipment sourcing pipeline and technical inputs.
+          Machinery sourcing and technical inputs are supported through established
+          international supply channels, including HFCC Limited (China).
         </p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- HOW WE WORK -->
 <section class="section">
   <div class="container">
-    <div class="card card-pad">
-      <h2 style="margin-top:0">Operation Wealth Creation Alignment</h2>
-      <p class="muted" style="max-width: 90ch">
-        Our work supports wealth creation through farmer reach, training, and practical support services.
-        Through collaboration with Operation Wealth Creation under Gen. Salim Saleh (Nyakayitana), we aim to strengthen the coffee value chain:
-        from farmer knowledge to post-harvest handling, drying support, and export market access.
-      </p>
-      <div class="grid-3">
-        <div class="card card-pad">
-          <h3 style="margin-top:0">Nationwide Farmer Reach</h3>
-          <p class="muted">We work to reach farmers directly through partnerships, training, and aggregation points.</p>
+    <h2>How We Work</h2>
+    <div class="timeline">
+      <div class="step">
+        <div class="num">1</div>
+        <div>
+          <h3>Production & Aggregation</h3>
+          <p>Supply from our core farm base and trained partner farmers.</p>
         </div>
-        <div class="card card-pad">
-          <h3 style="margin-top:0">Training & Standards</h3>
-          <p class="muted">Good agricultural practices, post-harvest handling, drying, and quality improvement.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div>
+          <h3>Post-Harvest Handling</h3>
+          <p>Drying, storage, and quality control aligned to export standards.</p>
         </div>
-        <div class="card card-pad">
-          <h3 style="margin-top:0">Value Addition</h3>
-          <p class="muted">Upgrading coffee from raw supply into export-ready specifications and products.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div>
+          <h3>Value Addition</h3>
+          <p>Processing, grading, sorting, and packaging readiness.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <div>
+          <h3>Export & Logistics</h3>
+          <p>Documentation, buyer coordination, and shipment preparation.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- PURPOSE -->
 <section class="section">
   <div class="container">
-    <h2>Our Team</h2>
-    <p class="muted" style="margin-top:0">Replace these placeholders with your real leadership and operations team.</p>
-    <div class="grid-3">
-      <div class="card">
-        <img src="assets/tm.jpg" alt="Team member placeholder">
-        <div class="card-pad">
-          <h3 style="margin:0 0 6px">Managing Director</h3>
-          <p class="muted small" style="margin:0">Export strategy • Partnerships • Compliance</p>
-        </div>
+    <div class="grid-2">
+      <div class="card card-pad">
+        <h2 style="margin-top:0">Our Purpose</h2>
+        <p class="muted">
+          To build a reliable bridge between Ugandan farmers and global markets
+          by strengthening production standards, value addition, and long-term
+          trade relationships.
+        </p>
       </div>
-      <div class="card">
-        <img src="assets/operations.jpg" alt="Team member placeholder">
-        <div class="card-pad">
-          <h3 style="margin:0 0 6px">Operations Lead</h3>
-          <p class="muted small" style="margin:0">Factory • Quality control • Logistics</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/tm2.jpg" alt="Team member placeholder">
-        <div class="card-pad">
-          <h3 style="margin:0 0 6px">Farmer Relations</h3>
-          <p class="muted small" style="margin:0">Training • Aggregation • Field support</p>
-        </div>
+
+      <div class="card card-pad">
+        <h2 style="margin-top:0">Our Vision</h2>
+        <p class="muted">
+          To become a trusted Ugandan export company known for quality-controlled
+          coffee, farmer-linked supply chains, and sustainable growth.
+        </p>
       </div>
     </div>
   </div>
@@ -196,91 +248,16 @@
 
 </main>
 
-<a
-  href="https://wa.me/256000000000?text=Hello%20Nyakishaba%2C%20I%27m%20interested%20in%20coffee%20export%20details."
-  class="whatsapp-float"
-  target="_blank"
-  rel="noopener"
-  aria-label="Chat on WhatsApp"
->
-  <img
-    class="whatsapp-icon"
-    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-    alt="WhatsApp"
-  />
-</a>
-
 <footer class="footer">
   <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="brand" style="min-width:auto">
-          <div class="brand-mark" aria-hidden="true"><img src="assets/web-log.png" alt="" onerror="this.style.display='none'"></div>
-          <div class="brand-name">
-            <strong>Nyakishaba Organic Produce Ltd.</strong>
-            <span class="small">Ugandan Robusta Coffee Export</span>
-          </div>
-        </div>
-        <p class="muted small" style="margin-top:10px">
-          <b> Premium Ugandan coffee for global markets built on quality control, compliance and long-term partnerships.</b>
-        </p>
-        <p class="small muted"><strong>Registration No:</strong> <span>[Add Registration Number]</span></p>
-      </div>
-
-      <div>
-        <h4>Company</h4>
-        <div class="small" style="display:grid; gap:8px">
-          <a href="about.html"> <b>About Us </b></a>
-          <a href="products.html"> <b>Products </b></a>
-          <a href="export-process.html"> <b>Export Process </b></a>
-          <a href="contact.html"> <b>Contact Us </b></a>
-        </div>
-      </div>
-
-      <div>
-        <h4>Quick Links</h4>
-        <div class="small" style="display:grid; gap:8px">
-          <a href="partner.html"> <b>Partner With Us</b> </a>
-          <a href="impact.html"> <b>Impact</b></a>
-          <a href="contact.html#quote"> <b>Request Quote </b></a>
-        </div>
-      </div>
-
-      <div>
-        <h4>Social</h4>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/nyakishaba-organic-produce-703025395/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> <b>LinkedIn</b> <br>
-            <a href="https://x.com/nyakishaba" aria-label="X"><i class="fab fa-x-twitter"></i></a> <b>X</b><br> 
-             
-        </div>
-
-      </div>
-    </div>
-
     <div class="copy">
-      <span><b>© 2025 Nyakishaba Organic Produce Ltd. All rights reserved.</b></span>
-      <span class="small"><b>Built for export credibility • Coffee • Compliance • Logistics </b></span>
+      <span><strong>© 2025 Nyakishaba Organic Produce Limited</strong></span>
+      <span class="small">
+        Registration No: <strong>80020002867415</strong>
+      </span>
     </div>
   </div>
 </footer>
-<script src="script.js" defer></script>
-<script>
-  // Right-click off
-  document.addEventListener("contextmenu", e => e.preventDefault());
-
-  // Block common shortcuts (not foolproof)
-  document.addEventListener("keydown", e => {
-    const k = (e.key || "").toLowerCase();
-    const ctrl = e.ctrlKey || e.metaKey;
-
-    // Ctrl/Cmd+C, S, U, P, A
-    if (ctrl && ["c","s","u","p","a"].includes(k)) e.preventDefault();
-
-    // F12 (devtools) and Ctrl+Shift+I/J
-    if (e.key === "F12") e.preventDefault();
-    if (ctrl && e.shiftKey && ["i","j","c"].includes(k)) e.preventDefault();
-  });
-</script>
 
 </body>
 </html>
